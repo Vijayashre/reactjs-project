@@ -14,17 +14,16 @@ useEffect(() => {
   return (
     <div>
       {data?.map((item) =>{
-        if(item.id  <= 3){
+        if(item.id  == 3){
           return(
             <div key={item.id}>
-              <div>{item.id}</div>
+              <div>{item.description}</div>
                 <img src={item.images}/>
                 <p>{item.price}</p>
               </div>
                );
         }
       })}
-   
     </div>
   );
 }

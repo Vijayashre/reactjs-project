@@ -13,7 +13,7 @@ function Api(){
     return(
 <div>
     {isShow?.map((item) =>{
-        if(item.id <=5 ){
+        if(item.id <=3 ){
         return(
             <div key={item.id}>
                 <p>{item.id}</p>
