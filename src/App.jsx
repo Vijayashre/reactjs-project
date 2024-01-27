@@ -1,16 +1,30 @@
+import { useState,useEffect } from "react";
+import axios from "axios";
+
 function App() {
+const [data , setData] = useState();
+
+useEffect(() => {
+  axios.get('https://dummyjson.com/products')
+  //.then((res) => res.json())
+  .then((data) => setData(data.data.products));
+ //.then((data) => console.log(data)); 
+
+});
   return (
     <div>
-      <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-        <h1>React Essentials</h1>
-        <p>
-         Welcom to start React project with component with -VijayaShree
-        </p>
-      </header>
-      <main>
-        <h2>Time to get started!</h2>
-      </main>
+      {data?.map((item) =>{
+        if(item.id  <= 3){
+          return(
+            <div key={item.id}>
+              <div>{item.id}</div>
+                <img src={item.images}/>
+                <p>{item.price}</p>
+              </div>
+               );
+        }
+      })}
+   
     </div>
   );
 }
