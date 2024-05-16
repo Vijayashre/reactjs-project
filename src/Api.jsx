@@ -7,6 +7,7 @@ function Api(){
     useEffect(() => {
         fetch("https://dummyjson.com/products")
         .then((res) => res.json())
+        //.then((isShow) => console.log(isShow));
         .then((isShow) => setShowData(isShow.products));
     },[])
 
@@ -17,6 +18,7 @@ function Api(){
         return(
             <div key={item.id}>
                 <p>{item.id}</p>
+                <p>{item.description}</p>
             </div>
         );
         }
