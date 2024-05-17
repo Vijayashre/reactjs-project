@@ -26,9 +26,6 @@ function App() {
           setFilteredResults(APIData)
       }
   }
-
-
-
   return (
     <div className="MaxContainer">
       <label className="title" style={{paddingRight: 10}}> Filter by Name :  </label>
@@ -43,11 +40,6 @@ function App() {
                     filteredResults.map((item) => {
                         return (
                             <div>
-                              <select id="sortDropdown" value={selectedOption}  onChange={(e) => searchItems(e.target.value)}>
-                              <option key={item} value={item.value}>
-                                  {option.label}
-                                </option>
-                              </select>
                             <div className="title" key={item.id}>
                               <div className="cardDP">
                               <div  className="title">
