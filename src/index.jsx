@@ -1,18 +1,19 @@
 import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 
-import Api from "./Api.jsx";
-import FormSubmit from "./FormSubmit.jsx";
-import TableData from "./TableData.jsx"
-//import TableData from "./TableData.jsx"
-import Addfield from "./Addfield.jsx";
+
+
 //import "./index.css";
-import NewForm from "./NewForm.jsx"
+
 
 const entryPoint = document.getElementById("root");
 ReactDOM.createRoot(entryPoint).render(
     <>
-   
-    < NewForm/>
+    < Header/>
+    < App/>
+    < Footer/>
     </>
 
 );
