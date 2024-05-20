@@ -336,6 +336,8 @@ select.sortBtn {
   justify-content: space-between;
 }
 .discount_price {
+  font-size: 16;
+  font-weight: 600;
   color: #fff;
   position: relative;
   width: 90%;
@@ -343,6 +345,6 @@ select.sortBtn {
   display: flex;
   left: 10px;
   background-color: #ff375e;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
