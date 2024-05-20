@@ -8,18 +8,19 @@ html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   color: #ebe7ef;
-  background-color: rgba(0, 0, 0, .04);
+  background-color: rgba(0, 0, 0, 0);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  min-height: 80rem;
 }
 
 header {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 }
 
 header img {
@@ -159,28 +160,23 @@ main h2 {
       .MaxContainer {
           max-width: 1280px;
           margin: 0 auto;
-          height: 880px;
       }
   }
-  /* .cardWrapper{
-    overflow-y: hidden;
-    overflow-x: scroll;
-  } */
 .cardDP {
   padding: 20px;
   margin-bottom: 20px;
   flex-grow: 0;
   max-width: 33.333333%;
   flex-basis: 33.333333%;
-  min-width: 300px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+  min-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
   background-color: #fff;
   background-size: 201% 100%;
   background-position: 100% 100%;
   transition: all .3s ease;
   overflow: hidden;
-  height: 415px;
+  height: 445px;
 
 }
 .Image{
@@ -194,7 +190,7 @@ main h2 {
   font-weight: 600;
   text-align: center;
   margin: 0;
-  height: 65px;
+  height: 95px;
 }
 p{
   margin: 0;
@@ -206,6 +202,12 @@ p{
   color: #333;
   font-size: 15px;
   font-weight: 600;
+  text-align: center;
+}
+.title-sub{
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
 }
 .butBtn{
@@ -244,11 +246,23 @@ p{
 
 /* src/Header.css */ 
 .header { 
-  background-color: #333; 
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #fff; 
   color: white; padding: 1rem; 
   text-align: center;
+  border-bottom: .5px solid rgba(0,0,0,.2)!important
+ }
+ nav{
+  align-items: center;
+  display: flex;
  }
  .nav-links { 
+  cursor: pointer;
   list-style-type: none;
    padding: 0; 
   } 
@@ -257,20 +271,78 @@ p{
   margin: 0 1rem;
  }
   .nav-links a { 
-    color: white;
+     color: #000000A9;;
      text-decoration: none;
      }
    .nav-links a:hover { 
     text-decoration: underline;
    }
    .footer{
-    background-color: #333;
+    position: relative;
+    background-color: #4f008c;
     color: #fff;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
   }
-  .container{
-    max-width: 1200px;
-    margin: 0 auto;
+  .container {
+    padding: 130px 0px 50px 0px;
+  } 
+  .Sorting{
+      justify-content: space-between;
+      display: flex;
   }
+  select#sort-direction {
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 116px;
+    padding: 10px;
+}
+select.sortBtn {
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+}
+.logout{
+  margin: 0 !important;
+}
+.loginBtn{
+  cursor: pointer;
+  color: #ff375e;
+  margin: 0 6px !important;
+}
+.loginBtn a{
+  font-weight: 800;
+  color: #ff375e;
+}
+.lego{
+  cursor: pointer;
+  padding-right: 25px;
+  margin: 2px 0;
+  color: rebeccapurple;
+  font-size: 33px;
+  font-weight: bold;
+}
+.wrapper-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.discount_price {
+  color: #fff;
+  position: relative;
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  left: 10px;
+  background-color: #ff375e;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
