@@ -18,9 +18,9 @@ function App() {
     setSortDirection(direction);
     const sortedProducts = [...APIData].sort((a, b) => {
       if (direction === 'asc') {
-        return a.title.localeCompare(b.title);
+        return a.offer.localeCompare(b.offer);
       } else {
-        return b.title.localeCompare(a.title);
+        return b.offer.localeCompare(a.offer);
       }
     });
     setAPIData(sortedProducts);
