@@ -7,10 +7,6 @@
 html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
-
-  color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -147,4 +143,47 @@ main h2 {
 
 #tab-content code {
   font-size: 1rem;
+}
+.containerDiv{
+  padding-top: 101px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.headerDiv{
+  position: fixed;
+  width: 100%;
+ text-align: center;
+  background-color: red;
+}
+.sideDiv{
+
+  width: 20%;
+  background-color: #03d5ff;
+  height: auto;
+}
+.RightDiv{
+  width: 20%;
+  background-color: #8964b0;
+  height: auto;
+}
+.foter{
+  display: block;
+  justify-content: center;
+  text-align:  center;
+}
+.insideDiv{
+  width: 60%;
+}
+.charShow{
+  gap: 20px;
+    grid-template-rows: auto auto auto auto;
+    display: flex;
+    padding: 10px;
+}
+.charDta{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  padding: 10px;
 }
