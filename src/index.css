@@ -7,8 +7,11 @@
 html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
+<<<<<<< HEAD
+=======
   color: #ebe7ef;
   background-color: rgba(0, 0, 0, 0);
+>>>>>>> 7b5bcf85c37699f8dc7ea508f46bf7bd2ba207c9
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -147,6 +150,51 @@ main h2 {
 #tab-content code {
   font-size: 1rem;
 }
+<<<<<<< HEAD
+.containerDiv{
+  padding-top: 101px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.headerDiv{
+  position: fixed;
+  width: 100%;
+ text-align: center;
+  background-color: red;
+}
+.sideDiv{
+
+  width: 20%;
+  background-color: #03d5ff;
+  height: auto;
+}
+.RightDiv{
+  width: 20%;
+  background-color: #8964b0;
+  height: auto;
+}
+.foter{
+  display: block;
+  justify-content: center;
+  text-align:  center;
+}
+.insideDiv{
+  width: 60%;
+}
+.charShow{
+  gap: 20px;
+    grid-template-rows: auto auto auto auto;
+    display: flex;
+    padding: 10px;
+}
+.charDta{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  padding: 10px;
+}
+=======
 .mainDiv{
   display: flex;
   width: calc(100% + 16px);
@@ -348,3 +396,4 @@ select.sortBtn {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
+>>>>>>> 7b5bcf85c37699f8dc7ea508f46bf7bd2ba207c9
